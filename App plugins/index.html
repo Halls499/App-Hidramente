@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hidramente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="registro">
+      <img src="logo hidramente.png" alt="" id="img-hidratacao"/>
+      <h1>Bem-vindo!</h1>
+      <p>Digite seu nome para começar:</p>
+      <input type="text" id="nomeUsuario" placeholder="Seu nome..." />
+      <br />
+      <button onclick="registrarUsuario()">Registrar</button>
+    </div>
+
+    <div id="main-content">
+      <img src="logo hidramente.png" alt="" id="img-hidratacao"/>
+      <h1 id="titulo-boasvindas">Hora de se Hidratar!</h1>
+      <p>Não se esqueça de beber água regularmente para manter sua saúde em dia.</p>
+      <button onclick="marcarHidratado()">Já bebi água!</button>
+      <div class="status" id="status-text"></div>
+    </div>
+  </div>
+
+  <p>Informe quantos ml de água você bebeu:</p>
+    <input type="number" id="quantidade" placeholder="Ex: 250" min="0">
+    <button onclick="adicionarAgua()">Adicionar</button>
+
+    <div id="total">Total consumido hoje: 0 ml</div>
+
+<script src="main.js"></script>
+</body>
+</html>
